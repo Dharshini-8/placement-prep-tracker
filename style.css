@@ -6,9 +6,13 @@
 }
 
 body{
+
     height: 100vh;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     background: linear-gradient(
@@ -19,66 +23,79 @@ body{
 }
 
 .container{
+
     width: 100%;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 }
 
 .login-box{
 
-    width: 370px;
+    width: 550px;
 
     background: white;
 
-    padding: 40px;
+    padding: 50px;
 
-    border-radius: 15px;
+    border-radius: 20px;
 
     text-align: center;
 
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
 }
 
 .login-box h1{
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.subtitle{
-    color: gray;
-    font-size: 14px;
-    margin-bottom: 25px;
-}
-
-input{
-    width: 100%;
-
-    padding: 12px;
 
     margin-bottom: 15px;
 
+    color: #222;
+
+    font-size: 50px;
+}
+
+.subtitle{
+
+    color: gray;
+
+    margin-bottom: 35px;
+
+    font-size: 22px;
+}
+
+input{
+
+    width: 100%;
+
+    padding: 18px;
+
+    margin-bottom: 20px;
+
     border: 1px solid #ccc;
 
-    border-radius: 8px;
+    border-radius: 10px;
 
-    font-size: 15px;
+    font-size: 18px;
 }
 
 button{
+
     width: 100%;
 
-    padding: 12px;
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 10px;
 
     background: #4facfe;
 
     color: white;
 
-    border: none;
-
-    border-radius: 8px;
-
-    font-size: 16px;
+    font-size: 20px;
 
     cursor: pointer;
 
@@ -86,10 +103,27 @@ button{
 }
 
 button:hover{
+
     background: #008cdd;
 }
 
+.register-link{
+
+    margin-top: 25px;
+}
+
+.register-link a{
+
+    text-decoration: none;
+
+    color: #4facfe;
+
+    font-size: 18px;
+}
+
 #message{
+
     margin-top: 15px;
-    font-size: 14px;
+
+    font-size: 16px;
 }

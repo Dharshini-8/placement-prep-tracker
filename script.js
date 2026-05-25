@@ -16,10 +16,7 @@ document
 
     if(username === "admin" && password === "1234"){
 
-        message.style.color = "green";
-
-        message.innerText =
-        "Login Successful!";
+        window.location.href = "dashboard.html";
     }
 
     else{
