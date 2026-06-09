@@ -7,13 +7,15 @@
 
 body{
 
-    height: 100vh;
+    min-height: 100vh;
 
     display: flex;
 
     justify-content: center;
 
-    align-items: center;
+    align-items: flex-start;
+
+    padding: 30px;
 
     background: linear-gradient(
         to right,
@@ -29,17 +31,19 @@ body{
     display: flex;
 
     justify-content: center;
-
-    align-items: center;
 }
 
 .dashboard-box{
 
-    width: 900px;
+    width: 100%;
+
+    max-width: 1200px;
 
     background: white;
 
     padding: 40px;
+
+    margin-top: 20px;
 
     border-radius: 20px;
 
@@ -52,11 +56,11 @@ body{
 
 .dashboard-box h1{
 
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 
     color: #222;
 
-    font-size: 45px;
+    font-size: 55px;
 }
 
 .subtitle{
@@ -65,7 +69,7 @@ body{
 
     margin-bottom: 40px;
 
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .dashboard-cards{
@@ -74,16 +78,16 @@ body{
 
     grid-template-columns: repeat(2,1fr);
 
-    gap: 20px;
+    gap: 30px;
 
     margin-bottom: 30px;
 }
 
 .card{
 
-    padding: 30px;
+    padding: 35px;
 
-    border-radius: 15px;
+    border-radius: 20px;
 
     color: white;
 
@@ -94,19 +98,19 @@ body{
 
 .card:hover{
 
-    transform: translateY(-8px);
+    transform: translateY(-10px);
 }
 
 .card h2{
 
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 
-    font-size: 28px;
+    font-size: 30px;
 }
 
 .card p{
 
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .aptitude-card{
@@ -149,17 +153,17 @@ body{
 
     width: 100%;
 
-    padding: 15px;
+    padding: 18px;
 
     border: none;
 
-    border-radius: 10px;
+    border-radius: 12px;
 
     background: #4facfe;
 
     color: white;
 
-    font-size: 20px;
+    font-size: 22px;
 
     cursor: pointer;
 
@@ -169,6 +173,11 @@ body{
 .logout-btn:hover{
 
     background: #008cdd;
+}
+
+a{
+
+    text-decoration: none;
 }
 
 @keyframes fadeIn{
@@ -198,5 +207,30 @@ body{
         opacity: 1;
 
         transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive */
+
+@media(max-width: 768px){
+
+    .dashboard-cards{
+
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-box h1{
+
+        font-size: 38px;
+    }
+
+    .card h2{
+
+        font-size: 24px;
+    }
+
+    .card p{
+
+        font-size: 18px;
     }
 }
